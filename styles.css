@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    --opponent1: red;
+    --opponent2: blue;
+    --opponent3: yellow;
+    --opponent4: green;
+}
+
+#counter-section{
+    /* border: 1px solid black; */
+    width: 1280px;
+    height: 800px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+}
+
+.counter {
+    border: 1px solid black;
+    width: 640px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#reset-button {
+    position: absolute;
+    top: 400px;
+    left: 620px;
+}
+
+.opponent-counters{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 0px;
+    justify-items: center;
+}
+
+.life-counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.counters-counter{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 0px;
+    justify-items: center;
+}
+
+#opponent3{
+    background-color: var(--opponent3);
+}

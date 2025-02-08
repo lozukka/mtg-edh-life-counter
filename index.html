@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>MTG EDH life counter</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <section id="counter-section">
+            <!--Opponent 1-->
+            <div class="counter">
+                <div class="opponent-counters">
+                <button>opp1</button>
+                <button>opp2</button>
+                <button>opp3</button>
+                <button>opp4</button>
+                <p>10</p>
+                <p>10</p>
+                <p>10</p>
+                <p>10</p>
+            </div>
+            <div class="life-counter">
+                <button>-</button>
+                <p id="life1">40</p>
+                <button>+</button>
+            </div>
+            <div class="counters-counter">
+                <button>poison</button>
+                <button>energy</button>
+                <button>random</button>
+                <p>10</p>
+                <p>10</p>
+                <p>10</p>
+            </div></div>
+            <!--Opponent 2-->
+            <div class="counter">
+                <div class="opponent-counters">
+                    <button>opp1</button>
+                    <button>opp2</button>
+                    <button>opp3</button>
+                    <button>opp4</button>
+                    <p>10</p>
+                    <p>10</p>
+                    <p>10</p>
+                    <p>10</p>
+                </div>
+                <div class="life-counter">
+                    <button>-</button>
+                    <p id="life2">40</p>
+                    <button>+</button>
+                </div>
+                <div class="counters-counter">
+                    <button>poison</button>
+                    <button>energy</button>
+                    <button>random</button>
+                    <p>10</p>
+                    <p>10</p>
+                    <p>10</p>
+                </div>
+            </div>
+            <!--Reset button-->
+            <button id="reset-button" onclick="resetGame(40)">RESET</button>
+            <!--Opponent 3-->
+        <div class="counter" id="opponent3">
+            <div class="opponent-counters">
+                <button>opp1</button>
+                <button>opp2</button>
+                <button>opp3</button>
+                <button>opp4</button>
+                <p>10</p>
+                <p>10</p>
+                <p>10</p>
+                <p>10</p>
+            </div>
+            <div class="life-counter">
+                <button class="life-counter-" onclick="updateLife('-')">-</button>
+                <p id="life3">40</p>
+                <button class="life-counter-" onclick="updateLife('+')">+</button>
+            </div>
+            <div class="counters-counter">
+                <button>poison</button>
+                <button>energy</button>
+                <button>random</button>
+                <p>10</p>
+                <p>10</p>
+                <p>10</p>
+            </div>
+        </div>
+        <!--Opponent 4-->
+            <div class="counter">
+                <div class="opponent-counters">
+                    <button>opp1</button>
+                    <button>opp2</button>
+                    <button>opp3</button>
+                    <button>opp4</button>
+                    <p>10</p>
+                    <p>10</p>
+                    <p>10</p>
+                    <p>10</p>
+                </div>
+                <div class="life-counter">
+                    <button>-</button>
+                    <p id="life4">40</p>
+                    <button>+</button>
+                </div>
+                <div class="counters-counter">
+                    <button>poison</button>
+                    <button>energy</button>
+                    <button>random</button>
+                    <p>10</p>
+                    <p>10</p>
+                    <p>10</p>
+                </div>
+            </div>
+        </section>
+    </body>
+<script src="/script.js"></script>
+</html>
