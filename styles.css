@@ -2,14 +2,15 @@
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --opponent1: red;
     --opponent2: blue;
     --opponent3: yellow;
     --opponent4: green;
+    --black: black;
 }
 
-#counter-section{
+#counter-section {
     /* border: 1px solid black; */
     width: 1280px;
     height: 800px;
@@ -19,7 +20,7 @@
 }
 
 .counter {
-    border: 1px solid black;
+    border: 1px solid var(--black);
     width: 640px;
     height: 400px;
     display: flex;
@@ -29,11 +30,13 @@
 
 #reset-button {
     position: absolute;
-    top: 400px;
+    top: 375px;
     left: 620px;
+    background-color: var(--black);
+    border-radius: 50%;
 }
 
-.opponent-counters{
+.opponent-counters {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -41,13 +44,13 @@
     justify-items: center;
 }
 
-.life-counter{
+.life-counter {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.counters-counter{
+.counters-counter {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -55,6 +58,10 @@
     justify-items: center;
 }
 
-#opponent3{
+#opponent3 {
     background-color: var(--opponent3);
+}
+
+.opponent-button {
+    background-color: var(--opponent1);
 }

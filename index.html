@@ -59,31 +59,22 @@
                 </div>
             </div>
             <!--Reset button-->
-            <button id="reset-button" onclick="resetGame(40)">RESET</button>
+            <button id="reset-button" onclick="resetGame(40)"><img src="/icons/restart.svg"></button>
             <!--Opponent 3-->
         <div class="counter" id="opponent3">
-            <div class="opponent-counters">
-                <button>opp1</button>
-                <button>opp2</button>
-                <button>opp3</button>
-                <button>opp4</button>
-                <p>10</p>
-                <p>10</p>
-                <p>10</p>
-                <p>10</p>
-            </div>
+           
             <div class="life-counter">
-                <button class="life-counter-" onclick="updateLife('-')">-</button>
+                <button class="life-counter-" id="-">-</button>
                 <p id="life3">40</p>
-                <button class="life-counter-" onclick="updateLife('+')">+</button>
+                <button class="life-counter-" id="+">+</button>
             </div>
             <div class="counters-counter">
-                <button>poison</button>
-                <button>energy</button>
-                <button>random</button>
-                <p>10</p>
-                <p>10</p>
-                <p>10</p>
+                <button id="poison3button"><img src="/icons/poison.svg"></button>
+                <button id="energy3button"><img src="/icons/energy.svg"></button>
+                <button id="random3button"><img src="/icons/random.svg"></button>
+                <p id="poison3">0</p>
+                <p id="energy3">0</p>
+                <p id="random3">0</p>
             </div>
         </div>
         <!--Opponent 4-->
